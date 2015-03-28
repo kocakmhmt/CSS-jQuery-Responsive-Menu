@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>CSS Responsive Menu / kocakmhmt</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+	$(function(){
+		var a = 0;
+		$('.openMenu').click(function(){
+			if ( a == 0 ){
+				$(this).text('Hide');
+				a++;
+			} else {
+				$(this).text('Open');
+				a = 0;
+			}
+			$(this).next('ul').slideToggle(500);
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="logo"><center><img src="img/logo.png"></center></div>
+<div class="menu">
+	<div class="openMenu">Open Menu</div>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Products</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+<div class="footer">
+	<p>Mehmet Koçak © 2015
+<a href="http://twitter.com/kocakmhmt"><img src="img/twitter.png" /></a>
+<a href="mailto:mkocak@kodofisi.org"><img src="img/mail.png" /></a></p>
+	
+	
+	</div>
+</body>
+</html>
