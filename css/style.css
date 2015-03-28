@@ -37,6 +37,7 @@ height: auto;
 	display: none
 }
 
+
 @media (max-width: 700px) {
 	.openMenu { display: block }
 	.menu ul { display: none }
